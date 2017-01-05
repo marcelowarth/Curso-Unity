@@ -5,8 +5,12 @@ public class NumberWizard : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		int max = 1000, min = 0;
+		
 		print("Welcome to Number Wizard");
 		print("Pick a number in you head and dont tell me.");
+		print("The highest number you can pick is " + max + ".");
+		print("The lowest number you can pick is " + min + ".");
 	}
 	
 	// Update is called once per frame

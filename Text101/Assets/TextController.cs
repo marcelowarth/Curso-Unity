@@ -8,7 +8,10 @@ public class TextController : MonoBehaviour {
 	private enum States {
 						cell, mirror, sheets_0, lock_0, 
 						cell_mirror, sheets_1, lock_1, 
-						corridor_0, closet_0, floor, stairs_0
+						corridor_0, closet_door, floor, stairs_0,
+						corridor_1, stairs_1, in_closet,
+						corridor_2, stairs_2,
+						corridor_3, courtyard
 						};
 	private States myState;
 
@@ -36,12 +39,26 @@ public class TextController : MonoBehaviour {
 			sheets_1();
 		} else if (myState == States.corridor_0) {
 			corridor_0();
-		} else if (myState == States.closet_0) {
-			closet_0();
+		} else if (myState == States.closet_door) {
+			closet_door();
 		} else if (myState == States.floor) {
 			floor();
 		} else if (myState == States.stairs_0) {
 			stairs_0();
+		} else if (myState == States.corridor_1) {
+			corridor_1();
+		} else if (myState == States.in_closet) {
+			in_closet();
+		} else if (myState == States.stairs_1) {
+			stairs_1();
+		} else if (myState == States.stairs_2) {
+			stairs_2();
+		} else if (myState == States.corridor_2) {
+			corridor_2();
+		} else if (myState == States.corridor_3) {
+			corridor_3();
+		} else if (myState == States.courtyard) {
+			courtyard();
 		}
 	}
 	
@@ -124,9 +141,99 @@ public class TextController : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.S)){
 			myState = States.stairs_0;
 		} else if(Input.GetKeyDown(KeyCode.C)){
-			myState = States.closet_0;
+			myState = States.closet_door;
 		} else if(Input.GetKeyDown(KeyCode.F)){
 			myState = States.floor;
+		}
+	}
+	
+	void stairs_0 () {
+		text.text = "You think on going for the stairs, but you remember the guards use them often, you should return!\n\n" + 
+			"Press R to Return";
+		if(Input.GetKeyDown(KeyCode.R)){
+			myState = States.corridor_0;
+		}
+	}
+	
+	void closet_door () {
+		text.text = "The closet on the corridor is locked.\n\n" + 
+			"Press R to Return";
+		if(Input.GetKeyDown(KeyCode.R)){
+			myState = States.corridor_0;
+		}
+	}
+	
+	void floor () {
+		text.text = "You looked on the floor and there is a hairclip, what do you do?\n\n" + 
+			"Press R to Return or T to Take it";
+		if(Input.GetKeyDown(KeyCode.R)){
+			myState = States.corridor_0;
+		} else if(Input.GetKeyDown(KeyCode.T)){
+			myState = States.corridor_1;
+		}
+	}
+	
+	void corridor_1 () {
+		text.text = "I have a hairclip, what should you do next?\n\n" + 
+			"Press S to go to the Stairs or C to go to the Closet";
+		if(Input.GetKeyDown(KeyCode.S)){
+			myState = States.stairs_1;
+		} else if(Input.GetKeyDown(KeyCode.C)){
+			myState = States.in_closet;
+		}
+	}
+	
+	void stairs_1 () {
+		text.text = "A hairclip will not defend me against the guards, i should return!\n\n" + 
+			"Press R to Return";
+		if(Input.GetKeyDown(KeyCode.R)){
+			myState = States.corridor_1;
+		}
+	}
+	
+	void in_closet () {
+		text.text = "You picked the lock from the closet with the hairclip and you found guard clothes, what do you do?\n\n" + 
+			"Press R to Return to the corridor or D to Dress it";
+		if(Input.GetKeyDown(KeyCode.R)){
+			myState = States.corridor_2;
+		} else if(Input.GetKeyDown(KeyCode.D)){
+			myState = States.corridor_3;
+		}
+	}
+	
+	void corridor_2 () {
+		text.text = "I go back to the corridor without changing clothes.\n\n" + 
+			"Press S to go to the Stairs or B to go Back to the closet";
+		if(Input.GetKeyDown(KeyCode.S)){
+			myState = States.stairs_2;
+		} else if(Input.GetKeyDown(KeyCode.B)){
+			myState = States.in_closet;
+		}
+	}
+	
+	void stairs_2 () {
+		text.text = "Im really trying to be arrested again dont i?\n\n" + 
+			"Press R to Return";
+		if(Input.GetKeyDown(KeyCode.R)){
+			myState = States.corridor_2;
+		}
+	}
+	
+	void corridor_3 () {
+		text.text = "I dressed that guard uniform and come back to the corridor.\n\n" + 
+			"Press S to go to the Stairs or U to Undress the clothes";
+		if(Input.GetKeyDown(KeyCode.S)){
+			myState = States.courtyard;
+		} else if(Input.GetKeyDown(KeyCode.U)){
+			myState = States.in_closet;
+		}
+	}
+	
+	void courtyard () {
+		text.text = "Dressed as a guard you go down the stairs to the courtyard, YOU ARE FREE!\n\n" + 
+			"Press P to Play again";
+		if(Input.GetKeyDown(KeyCode.P)){
+			myState = States.cell;
 		}
 	}
 }

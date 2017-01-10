@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\LevelManager.cs" />
+     <Compile Include="Assets\NumberWizard.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity 4.6/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{59DEA5B9-9008-B6D1-DD90-292A3E4ED7E5}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_3;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>D:/Unity 4.6/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>D:/Unity 4.6/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\account.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\calllog.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\contactdetail.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\feedback.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\fileUpload.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\framework.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\friend.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\home.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\imageCropper.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\message.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\neighborhood.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\newmessage.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\notification.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\send_email.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\js\sys_notification.min.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\lang\de.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\lang\en.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\lang\es-ES.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\lang\fr.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\lang\it.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\lang\ja.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\lang\pt-BR.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\lang\pt-PT.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\lang\ru.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\lang\zh-CN.js" />
+     <Compile Include="Assets\Sprites\Documents\AirDroid\Cache\Web\FileTranferWebPage\lang\zh-TW.js" />
+     <Compile Include="Assets\Sprites\Documents\Battlefield 1\twinkle\bundle.js" />
+     <None Include="Assets\Sprites\Documents\PlayClaw.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-tr-f731ec3a.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-en-16fa45b7.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_Battlefield1_PC_8.30.16_GER_DE-19c12cfd.txt" />
+     <None Include="Assets\Sprites\Documents\Overwatch\Logs\errors\Overwatch_33207_Retailx64_ptBR_7772_12-05-16_19.04.07_ErrorLog.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-it-58253880.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-mx-9bc74e74.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-fr-bd3ace93.txt" />
+     <None Include="Assets\Sprites\Documents\NewBlueFX\Logs\PremiereLog.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-tr-1162c67a.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-ko-a64cd41f.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-es-58a02f3a.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-ru-eeb84d61.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_Battlefield1_PC_8.16.16_ITA_IT-eb9da764.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-en-19b7fd61.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-ko-fad1f1cf.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-tc-267334b9.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-jp-d0447da4.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-ru-049703a6.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-it-19f00637.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-jp-b69421f7.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-es-9b5b964e.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-de-9fef088a.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-es-de5f00b2.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_SPA_MX-787efc14.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-es-6fd278b8.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-jp-def3fcc7.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-fr-75e4500d.txt" />
+     <None Include="Assets\Sprites\Documents\Overwatch\Logs\errors\Overwatch_33648_Retailx64_ptBR_5400_12-31-16_12.34.56_ErrorLog.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-ko-8e236800.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-cs-041c269d.txt" />
+     <None Include="Assets\Sprites\Documents\Anno 2205\fx\temp\cache.xml" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-br-692d98a9.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-pl-421c8f85.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_Battlefield1_PC_8.16.16_ENG_US-a9f0a043.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-mx-d2a1ff28.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-ko-2d0db025.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_FRE_FR-6516a345.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-br-f63d2687.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-de-87aa792f.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_Battlefield1_PC_8.16.16_POL_PL-be5cd911.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-ja-cebe5dbd.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-en-d41c6ce1.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-ar-99d3ac63.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-ru-c6b56e0d.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-cs-08e36f8e.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-br-8254622f.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-ru-5c77c7d9.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_ITA_IT-3bcc4a1f.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-it-e918e658.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-cs-b51352dc.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-it-b7c13e4c.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-br-742841a0.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-br-40bcc8f5.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-ar-d23e6be9.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-mx-207e473a.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-br-bcab0db8.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-tr-f922a86e.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-tr-ecb70fcd.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-cs-c1e79c5a.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_ENG_US-eee34ba6.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-ar-a24c85bd.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-tc-3289d77a.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-mx-239b4588.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_Battlefield1_PC_8.16.16_POR_BR-c2728510.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-es-6eeac95c.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-pl-80950584.txt" />
+     <None Include="Assets\Sprites\Documents\Adobe\Adobe Media Encoder\9.0\AMEPrefs.xml" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-tr-cbb786c1.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-es-117b19dd.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-ru-2cc0c661.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-cz-10dcf052.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-tc-20c38a96.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_SPA_ES-7cac774b.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_POL_PL-ab9eea33.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-de-50049396.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-fr-65fbf187.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-tc-d3ea9753.txt" />
+     <None Include="Assets\Sprites\Documents\Adobe\Adobe Media Encoder\14.0\AMEPrefs.xml" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-pl-b99d410e.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-jp-de6a5a0e.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-fr-921878e1.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-en-fc85ec7e.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_Battlefield1_PC_8.16.16_RUS_RU-35cfb05f.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\settings\meta.xml" />
+     <None Include="Assets\Sprites\Documents\Adobe\Premiere Pro\9.0\Profile-marce\Layouts\UserWorkspace1.xml" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-fr-928bd643.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_Battlefield1_PC_8.16.16_JPN_JP-a65900c0.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-en-e5b14b41.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-pl-9011ec1f.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-tr-375ff060.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-de-5db91fe6.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-en-e6cd1be4.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_Battlefield1_PC_8.16.16_CHT_CN-23d94b14.txt" />
+     <None Include="Assets\Sprites\Documents\Adobe\Premiere Pro\9.0\Profile-marce\Layouts\UserWorkspace3.xml" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-ru-cf76eb3e.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_CZE_CZ-2f5cf166.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_Battlefield1_PC_8.16.16_ARA_SA-9f1bb4e4.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_KOR_KR-562d3b5c.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-it-0d3747ea.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_CHT_CN-9801c961.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-mx-1430f8e3.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-ko-45b894c8.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-it-16a9da23.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-tc-47f8cfcf.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-ar-838e26f3.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_Battlefield1_PC_8.16.16_SPA_MX-c15115f5.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PC-ko-5428e67d.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-pl-5300e7dd.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_Battlefield1_PC_8.16.16_SPA_ES-21991268.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-ar-e158ccf8.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\version.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-PS4-de-2fda6c89.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-cs-e8558212.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_TUR_TR-be6c0713.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-mx-c16db0b8.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_RUS_RU-ef067c66.txt" />
+     <None Include="Assets\Sprites\Documents\Rockstar Games\GTA V\settings.xml" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-de-5acd94c7.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_ARA_SA-e1299a03.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_POR_BR-b17f8208.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_Battlefield1_PC_8.16.16_TUR_TR-26a86f73.txt" />
+     <None Include="Assets\Sprites\Documents\Adobe\Premiere Pro\9.0\Profile-marce\Layouts\UserWorkspace2.xml" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-tc-a26a741a.txt" />
+     <None Include="Assets\Sprites\Documents\Adobe\Premiere Pro\9.0\Profile-marce\Layouts\WorkspaceConfig.xml" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PC-fr-751c0122.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_GER_DE-e6a5fea4.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Terms_of_service-XBOXONE-pl-330ae929.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_Battlefield1_PC_8.16.16_FRE_FR-650af657.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-XBOX-ar-c5b69842.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\EULA_US_ROW_EU_PS4_XBOX_ONE_4.15.16_JPN_JP-963199c0.txt" />
+     <None Include="Assets\Sprites\Documents\Battlefield 1\twinkle\assets\BF1-EA-Privacy_Policy-PS4-ja-2f18926b.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>D:/Unity 4.6/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour {
 	public float velocity = 15.0f;
 	public float padding = 1f;
 	
-	float xMin, xMax;
+	private float xMin, xMax;
 	
 	// Use this for initialization
 	void Start () {

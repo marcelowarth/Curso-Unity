@@ -5,6 +5,9 @@ public class PlayerController : MonoBehaviour {
 	
 	public float velocity = 15.0f;
 	public float padding = 1f;
+	public GameObject projectile;
+	public float projectileSpeed;
+	public float firingRate = 500f;
 	
 	private float xMin, xMax;
 	
@@ -19,6 +22,13 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (Input.GetKeyDown(KeyCode.Space)) {
+			InvokeRepeating("Fire", 0.0001f, firingRate);
+		}
+		if (Input.GetKeyUp(KeyCode.Space)) {
+			CancelInvoke("Fire");
+		}
+		
 		if(Input.GetKey(KeyCode.LeftArrow)) {
 			transform.position += Vector3.left * velocity * Time.deltaTime;
 		} else if(Input.GetKey(KeyCode.RightArrow)) {
@@ -29,4 +39,13 @@ public class PlayerController : MonoBehaviour {
 		float newX = Mathf.Clamp(transform.position.x, xMin, xMax);
 		transform.position = new Vector3(newX, transform.position.y, transform.position.z);
 	}
+	
+	void Fire() {
+		Vector3 fire = transform.position;
+		fire.y += 0.5f;
+		GameObject beam = Instantiate(projectile, fire, Quaternion.identity) as GameObject;
+		beam.rigidbody2D.velocity = new Vector3(0f, projectileSpeed, 0f);
+	}
+	
+	
 }

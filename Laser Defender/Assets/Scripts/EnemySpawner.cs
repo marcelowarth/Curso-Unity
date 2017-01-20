@@ -45,8 +45,10 @@ public class EnemySpawner : MonoBehaviour {
 	void VerifyEdge () {
 		float rightEdge = transform.position.x + (0.5f * width);
 		float leftEdge = transform.position.x - (0.5f * width);
-		if (leftEdge < xMin || rightEdge > xMax) {
-			right = !right;
+		if (leftEdge < xMin) {
+			right = true;
+		} else if (rightEdge > xMax) {
+			right = false;
 		}
 	}
 }

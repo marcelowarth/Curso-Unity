@@ -43,7 +43,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	
 	void Fire() {
 		GameObject beam = Instantiate(projectile, transform.position, Quaternion.identity) as GameObject;
-		beam.rigidbody2D.velocity = new Vector2(0f, -projectileSpeed);
+		beam.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, -projectileSpeed);
 		AudioSource.PlayClipAtPoint(shot, transform.position);
 	}
 	

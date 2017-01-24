@@ -5,10 +5,11 @@ using UnityEngine.UI;
 public class ScoreKeeper : MonoBehaviour {
 	
 	private Text text;
-	private int score = 0;
+	public static int score = 0;
 	
 	void Start() {
 		text = GetComponent<Text>();
+		text.text = score.ToString();
 		Reset();
 	}
 	
@@ -17,7 +18,7 @@ public class ScoreKeeper : MonoBehaviour {
 		text.text = score.ToString();
 	}
 	
-	public void Reset() {
+	public static void Reset() {
 		score = 0;
 	}
 }

@@ -8,6 +8,8 @@ public class LevelManager : MonoBehaviour {
 	void Start () {
 		if(Application.loadedLevel == 0) {
 			Invoke ("LoadNextLevel", loadNextLevelAfter);
+		} else if(loadNextLevelAfter >= 0f) {
+			Debug.Log("Use positive number on Load Next Level After!");
 		}
 	}
 	

@@ -11,7 +11,7 @@ public class Shredder : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D collider) {
 		if(collider.GetComponent<Attacker>()) {
-			levelManager.LoadLevel("98 Lose");
+			levelManager.LoadLevel("99 Lose");
 		}
 		Destroy(collider.gameObject);
 	}

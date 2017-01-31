@@ -9,6 +9,8 @@ public class Attacker : MonoBehaviour {
 	private float currentSpeed;
 	private GameObject currentTarget;
 	private Animator animator;
+	
+	public float seenEverySeconds;
 
 	// Use this for initialization
 	void Start () {
